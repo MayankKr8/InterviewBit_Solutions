@@ -1,4 +1,4 @@
-//The question is all about binary division. There are many methods such as 2's complement or the usual loing division.
+//The question is all about binary division. There are many methods such as 2's complement or the usual loing division. For more info visit https://www.wikihow.com/Divide-Binary-Numbers
 // The method used here is long division.
 //Keep in mind to take into consideration the dividend and/or divisor being negative.
 int Solution::divide(int A, int B) {
