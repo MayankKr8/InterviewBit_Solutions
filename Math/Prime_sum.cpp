@@ -1,4 +1,5 @@
 vector<int> Solution::primesum(int A) {
+printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
     vector<int> ans;
     for(int i=2;i<=A/2;i++)
     {
