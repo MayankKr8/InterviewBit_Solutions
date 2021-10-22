@@ -2,6 +2,12 @@
 // The complexity is a constant (32)
 
 int Solution::numSetBits(unsigned int A) {
+vector<int> dummy;
+        dummy.push_back(A->val);
+        ans.push_back(dummy);
+        dummy.clear();
+        if(A->left) chd.push_back(A->left);
+        if(A->right) chd.push_back(A->right);
     int count =0;
     if(A==0 or A==1) return A;
     for(int i=0;i<32;i++)
