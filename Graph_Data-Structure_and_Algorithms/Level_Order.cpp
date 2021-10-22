@@ -13,6 +13,12 @@
 vector<vector<int> > Solution::levelOrder(TreeNode* A) {
     vector<TreeNode*> chd;
     vector<vector<int>> ans;
+vector<int> dummy;
+        dummy.push_back(A->val);
+        ans.push_back(dummy);
+        dummy.clear();
+        if(A->left) chd.push_back(A->left);
+        if(A->right) chd.push_back(A->right);
     if(!A) return ans;
     else
     {
