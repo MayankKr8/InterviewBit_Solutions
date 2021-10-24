@@ -2,6 +2,12 @@
 //One digit at a time from right to left, while maintaining a carry
 
 vector<int> Solution::plusOne(vector<int> &A) {
+    ector<int> dummy;
+         dummy.push_back(A->val);
+         ans.push_back(dummy);
+         dummy.clear();
+         if(A->left) chd.push_back(A->left);
+         if(A->right) chd.push_back(A->right);
     reverse(A.begin(),A.end());
     int carry=1,adder=1;
     for(int i=0;i<A.size();i++)
