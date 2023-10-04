@@ -13,6 +13,12 @@ vector<int> Solution::repeatedNumber(const vector<int> &A) {
     add += sum;
     r  = add/2;
     m = r - sum;
+    for(int i=0;i<A.size();i++)
+    {
+        A[i] += carry;
+        carry = A[i]/10;
+        A[i] = A[i]%10;
+    }
     vector<int> ans;
     ans.push_back(r);
     ans.push_back(m);
